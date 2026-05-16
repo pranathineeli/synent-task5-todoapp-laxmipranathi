@@ -1,0 +1,156 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#e0f2fe;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.container{
+  background:white;
+  padding:30px;
+  width:400px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1{
+  text-align:center;
+  margin-bottom:20px;
+  color:#2563eb;
+}
+
+.todo-input{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.todo-input input{
+  flex:1;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:8px;
+}
+
+.todo-input button{
+  padding:12px 20px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.todo-input button:hover{
+  background:#1d4ed8;
+}
+
+.filters{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.filters button{
+  padding:8px 14px;
+  border:none;
+  border-radius:6px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+
+.filters button:hover{
+  background:#1d4ed8;
+}
+ 
+#emptyMessage{
+  text-align:center;
+  color:#64748b;
+  margin-bottom:15px;
+}
+
+ul{
+  list-style:none;
+}
+
+li{
+  background:#f8fafc;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:8px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:0.3s;
+}
+
+li:hover{
+  transform:scale(1.02);
+}
+
+#taskCounter{
+  text-align:center;
+  margin-bottom:20px;
+  color:#475569;
+}
+
+.task-buttons button{
+  margin-left:5px;
+  border:none;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.completed{
+  text-decoration:line-through;
+  color:gray;
+  transition:0.3s;
+}
+
+.complete-btn{
+  background:#22c55e;
+  color:white;
+}
+
+.complete-btn:hover{
+  opacity:0.8;
+}
+
+.delete-btn{
+  background:#ef4444;
+  color:white;
+  transition:0.3s;
+}
+
+.delete-btn:hover{
+  opacity:0.8;
+}
+
+@media(max-width:500px){
+
+  .container{
+    width:90%;
+  }
+.todo-input{
+  flex-direction:column;
+}
+
+.todo-input button{
+  width:100%;
+}
+
+.filters{
+  flex-direction:column;
+}
+}
