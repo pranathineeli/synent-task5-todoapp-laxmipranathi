@@ -51,6 +51,7 @@ h1{
 }
 
 .todo-input button:hover{
+  transform:scale(1.05);
   background:#1d4ed8;
 }
 
@@ -71,7 +72,8 @@ h1{
 }
 
 .filters button:hover{
-  background:#1d4ed8;
+    transform:scale(1.05);  
+    background:#1d4ed8;
 }
  
 #emptyMessage{
