@@ -143,6 +143,9 @@ li:hover{
   .container{
     width:90%;
   }
+  h1{
+  font-size:28px;
+}
 .todo-input{
   flex-direction:column;
 }
